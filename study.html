@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>英語学習サービス 無料体験 | 続けやすい3ステップ</title>
+  <meta name="description" content="忙しくても続けやすいオンライン英語学習。無料体験でプランと学習法を確認し、短時間でも成果を積み上げる3ステップをご案内します。">
+  <meta property="og:title" content="英語学習サービス 無料体験 | 続けやすい3ステップ">
+  <meta property="og:description" content="忙しくても続けやすいオンライン英語学習。無料体験でプランと学習法を確認し、短時間でも成果を積み上げる3ステップをご案内します。">
+  <style>
+    :root {
+      --bg: #f4f6fb;
+      --card: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --accent: #2563eb;
+      --accent-weak: #e0ecff;
+      --border: #e2e8f0;
+      --radius: 16px;
+      --shadow: 0 14px 40px rgba(15, 23, 42, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Avenir Next", "Helvetica Neue", "Segoe UI", "Yu Gothic", "Noto Sans JP", system-ui, sans-serif;
+      background: radial-gradient(140% 140% at 20% 20%, #eef2ff, #f9fafb 40%, #eef2ff 80%) fixed;
+      color: var(--ink);
+      line-height: 1.7;
+      letter-spacing: 0.02em;
+    }
+    a { color: inherit; text-decoration: none; }
+    .page {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 20px 18px 60px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 0 8px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .badge {
+      position: fixed;
+      top: 14px;
+      right: 14px;
+      z-index: 20;
+      background: var(--ink);
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.2);
+      letter-spacing: 0.01em;
+    }
+    .section {
+      margin: 42px 0;
+    }
+    h1, h2, h3 {
+      margin: 0 0 14px;
+      line-height: 1.35;
+      letter-spacing: 0.01em;
+    }
+    h1 { font-size: clamp(26px, 5vw, 34px); }
+    h2 { font-size: clamp(22px, 4vw, 28px); }
+    h3 { font-size: 18px; color: var(--muted); }
+    p { margin: 0 0 12px; color: var(--muted); }
+    ul, ol { margin: 0 0 12px 18px; color: var(--ink); padding-left: 18px; }
+    .lead {
+      font-size: 16px;
+      color: var(--muted);
+      max-width: 720px;
+    }
+    .hero {
+      background: linear-gradient(135deg, #e0ebff, #f7faff 45%, #ffffff);
+      border: 1px solid var(--border);
+      border-radius: calc(var(--radius) * 1.4);
+      padding: 30px 24px;
+      box-shadow: var(--shadow);
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 18px;
+      border-radius: 12px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+      border: 1px solid var(--accent);
+      box-shadow: 0 12px 30px rgba(37, 99, 235, 0.25);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+    .cta.secondary {
+      background: #fff;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      box-shadow: none;
+    }
+    .cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 36px rgba(37, 99, 235, 0.35);
+    }
+    .cta:focus-visible {
+      outline: 3px solid #cbd9ff;
+      outline-offset: 3px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 16px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+    }
+    .card strong { color: var(--ink); }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      background: var(--accent-weak);
+      color: var(--accent);
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .list-clean { list-style: none; padding: 0; margin: 0; }
+    .list-clean li {
+      padding: 10px 12px;
+      margin-bottom: 8px;
+      background: #fff;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .list-clean li::before {
+      content: "•";
+      color: var(--accent);
+      font-weight: bold;
+      line-height: 1.4;
+    }
+    .grid-two {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    .faq {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: #fff;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      box-shadow: 0 10px 26px rgba(15, 23, 42, 0.03);
+    }
+    .faq dt {
+      font-weight: 700;
+      color: var(--ink);
+      margin: 0 0 6px;
+    }
+    .faq dd {
+      margin: 0;
+      color: var(--muted);
+    }
+    .footer {
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      padding-top: 14px;
+      margin-top: 36px;
+    }
+    .cta-block {
+      text-align: center;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: calc(var(--radius) * 1.1);
+      padding: 24px 18px;
+      box-shadow: var(--shadow);
+    }
+    @media (min-width: 720px) {
+      .cards { grid-template-columns: repeat(3, 1fr); }
+      .grid-two { grid-template-columns: repeat(2, 1fr); }
+      header { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="badge" href="/go/study" aria-label="PR：アフィリエイトリンクを含みます">PR：アフィリエイトリンク</a>
+  <div class="page">
+    <header>
+      <div class="pill">学習の無料相談つき</div>
+      <div aria-label="PR表記">PR：アフィリエイトリンクを含みます</div>
+    </header>
+
+    <section class="section hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">忙しくても続けられるオンライン英語学習、まず無料体験から。</h1>
+      <p class="lead">1回10〜20分の短時間レッスンと自宅でできる宿題で、目標に合わせた学習を設計。学習計画・コーチング・振り返りまで、体験で流れを確認できます。</p>
+      <p class="lead">教材は初級〜ビジネスまで幅広く、発音・会話・リスニングをバランスよく練習。チャットサポートで質問できるので一人で詰まりにくい設計です。</p>
+      <p class="lead">費用は体験後に選べるシンプルなプランのみ。まずは相性チェックを兼ねて気軽にお試しください。</p>
+      <p style="margin-top:18px;">
+        <a class="cta" href="/go/study">無料体験を予約する</a>
+      </p>
+    </section>
+
+    <section class="section" aria-labelledby="trouble-title">
+      <h2 id="trouble-title">よくある悩み</h2>
+      <ul class="list-clean" aria-label="英語学習のよくある悩み">
+        <li>時間がなくて毎日続かない</li>
+        <li>何から手を付ければいいか分からない</li>
+        <li>リスニングは聞き取れるのに話せない</li>
+        <li>独学だと正しく学べているか不安</li>
+        <li>忙しくなると計画が崩れてしまう</li>
+      </ul>
+    </section>
+
+    <section class="section" aria-labelledby="solution-title">
+      <h2 id="solution-title">解決の考え方</h2>
+      <p class="lead">短時間でも「計画→実践→振り返り」を毎週回すことで、習熟度のズレを小さくし、着実に伸ばします。体験ではこの循環を試し、続けやすさを確認できます。</p>
+      <div class="cards" aria-label="3ステップで進む理由">
+        <div class="card">
+          <div class="pill">STEP 1</div>
+          <h3>現状と目的を整理</h3>
+          <p>レベルチェックと目標確認。発音・文法・スピーキングの優先順位を決めます。</p>
+        </div>
+        <div class="card">
+          <div class="pill">STEP 2</div>
+          <h3>1週間の学習プランを作成</h3>
+          <p>1回10〜20分のタスクを設定。レッスンと自宅練習をセットで組み込みます。</p>
+        </div>
+        <div class="card">
+          <div class="pill">STEP 3</div>
+          <h3>振り返りと微調整</h3>
+          <p>録音やメモをもとに改善点を共有。弱点を次週のタスクに反映していきます。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="suit-title">
+      <h2 id="suit-title">このサービスが向く人 / 向かない人</h2>
+      <div class="grid-two">
+        <div class="card">
+          <h3>向く人</h3>
+          <ul>
+            <li>短時間でも毎週コツコツ積み上げたい方</li>
+            <li>目的に合わせた学習メニューを欲しい方</li>
+            <li>発音やスピーキングを重点的に鍛えたい方</li>
+            <li>進捗を数値や記録で確認したい方</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>向かない人</h3>
+          <ul>
+            <li>教材や課題を自分で選びたい方</li>
+            <li>週ごとの振り返りが不要な方</li>
+            <li>対面指導だけを希望する方</li>
+            <li>学習時間をまったく確保できない方</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="flow-title">
+      <h2 id="flow-title">使い方（無料体験の流れ）</h2>
+      <ol>
+        <li><strong>申し込み</strong>：フォームで希望時間と学習目的を送信。</li>
+        <li><strong>事前ヒアリング</strong>：レベルと目標をオンラインで確認。</li>
+        <li><strong>無料レッスン</strong>：10〜20分の体験で教材と進め方を試す。</li>
+        <li><strong>振り返り</strong>：上達ポイントと課題を整理し、改善案を共有。</li>
+        <li><strong>プラン選択</strong>：続ける場合はプランを選択。合わなければ終了も可能です。</li>
+      </ol>
+      <p><a class="cta secondary" href="/go/study">無料体験に進む</a></p>
+    </section>
+
+    <section class="section" aria-labelledby="faq-title">
+      <h2 id="faq-title">FAQ</h2>
+      <div class="faq"><dl>
+        <dt>無料体験の料金はかかりますか？</dt>
+        <dd>体験は0円です。体験後に希望があれば有料プランを選べます。</dd>
+      </dl></div>
+      <div class="faq"><dl>
+        <dt>解約や休会はできますか？</dt>
+        <dd>更新前に手続きすればいつでも停止できます。手順は体験時にご案内します。</dd>
+      </dl></div>
+      <div class="faq"><dl>
+        <dt>忙しくても続けられますか？</dt>
+        <dd>1回10〜20分のタスクを軸に設計します。週のスケジュールに合わせて調整可能です。</dd>
+      </dl></div>
+      <div class="faq"><dl>
+        <dt>効果はどのように分かりますか？</dt>
+        <dd>録音・チェックリスト・スコアで進捗を確認します。結果は個人差があります。</dd>
+      </dl></div>
+      <div class="faq"><dl>
+        <dt>英語レベルに制限はありますか？</dt>
+        <dd>初級の方からビジネス英会話を目指す方まで利用できます。目的に合わせて教材を選びます。</dd>
+      </dl></div>
+      <div class="faq"><dl>
+        <dt>続け方のサポートはありますか？</dt>
+        <dd>週ごとの振り返りとチャット相談で習慣化を支援します。無理のないペースを一緒に決めます。</dd>
+      </dl></div>
+    </section>
+
+    <section class="section cta-block" aria-labelledby="cta-repeat-title">
+      <h2 id="cta-repeat-title">まずは無料で試して、続けられるか確認しませんか？</h2>
+      <p class="lead">PR：アフィリエイトリンクを含みます。サービスの詳細や条件は公式ページでご確認ください。</p>
+      <p style="margin-top:14px;">
+        <a class="cta" href="/go/study">無料体験を予約する</a>
+      </p>
+    </section>
+
+    <footer class="footer">
+      <div>PR：アフィリエイトリンクを含みます。学習効果や体験内容は個人差があります。最新の料金・条件は申込先でご確認ください。</div>
+    </footer>
+  </div>
+</body>
+</html>
